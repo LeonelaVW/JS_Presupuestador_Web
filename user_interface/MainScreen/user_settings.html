@@ -1,0 +1,672 @@
+<!-- PANTALLA PRINCIPAL -->
+
+<!DOCTYPE html>
+<html dir="ltr" lang="es-AR">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8; charset=ISO-8859-1"/>
+
+    <title>Editar Perfil Usuario</title>
+
+    <link rel="stylesheet" href="/FullPage_PresupuestadorWEB/user_interface/MainScreen/main_screen_1.css" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/FullPage_PresupuestadorWEB/img/icons/purchase-home-purchase-a-house-house-shopping-house-hunting-svgrepo-com blanco chico.png" type="image/png">
+ 
+</head>
+
+<body class="bg-body overflow-y-overlay">
+
+    <div class="container flex items-center py-3 mb-4 border-b-2 xl:hidden">
+        <span class="material-icons text-black js-hamburger-menu">menu</span>
+            <div class="flex items-center m-auto">
+                <img src="/FullPage_PresupuestadorWEB/img/icons/calculator-coins-svgrepo-com azul grande.png" class="w-8 m-auto" alt="" />
+                    <span class="ltr:ml-2 rtl:mr-2">Cliente Modelo</span>
+            </div>
+<!--
+
+            <div class="relative">
+                <button type="button"
+                        class="w-full lg:w-9 h-9 flex items-center justify-center px-2 py-2 bg-gray-100 hover:bg-gray-200 rounded-xl text-purple text-sm font-medium leading-6" 
+                        data-dropdown-toggle="dropdown-mobile-actions">
+                            <span class="material-icons pointer-events-none">more_horiz</span>
+                </button>
+                <div    id="dropdown-mobile-actions"
+                        class="absolute right-0 mt-3 py-2 bg-white rounded-md border border-gray-200 shadow-xl z-20 hidden"
+                        style="left: auto; min-width: 10rem;">
+                    <div class="w-full flex items-center text-purple px-2 h-9 leading-9 whitespace-nowrap" >
+                        <a href="https://app.akaunting.com/251408/banking/transactions/create?type=income" target="_self" class="w-full h-full flex items-center rounded-md px-2 text-sm font-normal hover:bg-lilac-100">
+                    Nuevo Ingresos
+                        </a>
+                    </div>
+                    <div class="w-full flex items-center text-purple px-2 h-9 leading-9 whitespace-nowrap" kind="primary">
+                        <a href="https://app.akaunting.com/251408/banking/transactions/create?type=expense" target="_self" class="w-full h-full flex items-center rounded-md px-2 text-sm font-normal hover:bg-lilac-100">
+                    Nuevo Gastos
+                        </a>
+                    </div>
+                </div>
+            </div>
+-->
+    </div>
+
+<!--BARRA LATERAL DE NAVEGACION REWARDS, TWO FACTOR AUTHENTICATION,ETC-->
+
+    <div class="profile-menu user-menu menu-list fixed h-full ltr:-left-80 rtl:-right-80">
+        <div class="flex h-12.5">
+            <span   name="account_circle" 
+                    class="material-icons-outlined w-8 h-8 flex items-center justify-center text-purple text-2xl pointer-events-none"
+                    alt="Cliente Modelo" 
+                    title="Cliente Modelo">
+                account_circle
+            </span>
+            <div class="flex flex-col text-black ml-2">
+                <span class="text-xs">
+            Bienvenido/a
+                </span>
+            Cliente Modelo
+            </div>
+        </div>
+
+        <div    wire:id="BTEcwROu6Bv9N0aljucp" 
+                wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;BTEcwROu6Bv9N0aljucp&quot;,&quot;name&quot;:&quot;menu.profile&quot;,&quot;locale&quot;:&quot;es-AR&quot;,&quot;path&quot;:&quot;251408\/auth\/profile\/252911\/edit&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;52d3c063&quot;,&quot;data&quot;:{&quot;active_menu&quot;:1},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;ed8e438db8d5d611dcbae4eefe893af7e59493174b0c164557d8f09308df72dc&quot;}}"
+                id="menu-profile">
+            <div class="navbar-inner">
+                <!-- Collapse -->
+                <div id="sidenav-collapse-main">
+                    <!-- Nav items -->
+                    <ul class="flex flex-col justify-center">
+                        <li class="group relative pb-2.5 text-sm">
+                            <a id="menu-auth-profile-252911-edit" class="flex items-center text-purple font-semibold" href="https://app.akaunting.com/251408/auth/profile/252911/edit" >
+                                <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                                    <span class="material-icons text-purple text-2xl">
+                                badge
+                                    </span>
+                                </div>
+                            Perfil
+                                <span   class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none"
+                                        style="width: 5px;">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="group relative pb-2.5 text-sm">
+                            <a id="menu-cloud-plans" class="flex items-center text-purple" href="https://app.akaunting.com/251408/cloud/plans" >
+                                <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                                    <span   class="material-icons-outlined text-purple text-2xl">
+                                verified
+                                    </span>
+                                </div>
+                            Plans
+                                <span   class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" 
+                                        style="width: 5px;">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="group relative pb-2.5 text-sm">
+                            <a id="menu-auth-users" class="flex items-center text-purple" href="https://app.akaunting.com/251408/auth/users" >
+                                <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                                    <span   class="material-icons-outlined text-purple text-2xl">
+                                people
+                                    </span>
+                                </div>
+
+                    Usuarios
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-roles-roles" class="flex items-center text-purple" href="https://app.akaunting.com/251408/roles/roles" >
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">verified_user</span>
+            </div>
+
+                    Roles
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-twofactor-edit" class="flex items-center text-purple" href="https://app.akaunting.com/251408/twofactor/edit" >
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">security</span>
+            </div>
+
+                    Two Factor Authentication
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-cloud-tickets" class="flex items-center text-purple" href="https://app.akaunting.com/251408/cloud/tickets" >
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">confirmation_number</span>
+            </div>
+
+                    Tickets
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-cloud-subscriptions" class="flex items-center text-purple" href="https://app.akaunting.com/251408/cloud/subscriptions" >
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">receipt</span>
+            </div>
+
+                    Subscriptions
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-cloud-rewards" class="flex items-center text-purple" href="https://app.akaunting.com/251408/cloud/rewards" >
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">redeem</span>
+            </div>
+
+                    Rewards
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+<li class="group relative pb-2.5 text-sm">
+                <a id="menu-auth-logout" class="flex items-center text-purple mt-5" href="https://app.akaunting.com/251408/auth/logout"  class="mt-5">
+                    <div class="w-8 h-8 flex items-center justify-center ltr:mr-2 rtl:ml-2 pointer-events-none">
+                <span class="material-icons-outlined text-purple text-2xl">power_settings_new</span>
+            </div>
+
+                    Cerrar sesión
+                    <span class="bg-purple absolute h-5 -right-5 rounded-tl-lg rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all pointer-events-none" style="width: 5px;"></span>
+                </a>
+            </li>
+
+</ul>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Livewire Component wire-end:BTEcwROu6Bv9N0aljucp -->    
+
+</div>
+
+
+
+
+<!--BOTONES LATERALES NOTIFICATIONS, SEARCH, NEW, SETTINGS, SUPPORT-->
+
+            <div class="group flex flex-col items-center justify-center menu-toggle-buttons">
+
+                <div    data-tooltip-target="tooltip-profile"
+                data-tooltip-placement="right"
+                class="flex flex-col items-center justify-center mb-5 cursor-pointer menu-button"
+                data-menu="profile-menu">
+            <span   id="menu-profile-icon-cancel"
+                    name="account_circle"
+                    class="material-icons-outlined w-8 h-8 flex items-center justify-center text-purple text-2xl hidden pointer-events-none">
+                account_circle
+            </span>
+            <span   id="menu-profile-icon"
+                    name="account_circle"
+                    class="material-icons-outlined text-purple w-8 h-8 flex items-center justify-center text-center text-2xl pointer-events-none"
+                    alt="Cliente Modelo" 
+                    title="Cliente Modelo">
+                account_circle
+            </span>
+                </div>    
+                <div    id="tooltip-profile"
+                        class="inline-block absolute z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm whitespace-nowrap opacity-0 invisible">
+                    Perfil
+                        <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                                data-popper-arrow>
+                        </div>
+                </div>
+                
+                <span   class="relative auto"
+                        data-tooltip-target="tooltip-notifications"
+                        data-tooltip-placement="right">
+                    <button type="button"
+                            class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer js-menu-toggles"
+                            data-menu="notifications-menu">
+                        <span   id="menu-notification-icon" 
+                                name="notifications" 
+                                class="material-icons-outlined text-purple text-2xl pointer-events-none">
+                            notifications
+                        </span>
+                    </button>
+                </span>
+                <div    id="tooltip-notifications"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm opacity-0 whitespace-normal">
+                    Notifications
+                    <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                            data-popper-arrow>
+                    </div>
+                </div>
+
+                <span   class="relative auto"
+                        data-tooltip-target="tooltip-search"
+                        data-tooltip-placement="right">
+                    <button type="button" class="flex items-center menu-button justify-center w-8 h-8 mb-2.5 relative cursor-pointer">
+                        <span   id="menu-search-icon"
+                                name="search"
+                                class="material-icons-outlined text-purple text-2xl pointer-events-none">
+                            search
+                        </span>
+                    </button>
+                </span>
+
+                <div    id="tooltip-search"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm opacity-0 whitespace-normal">
+                    Buscar
+                    <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                            data-popper-arrow>
+                    </div>
+                </div>
+
+                <span   class="relative auto"
+                        data-tooltip-target="tooltip-new"
+                        data-tooltip-placement="right">
+                    <button type="button" class="add-item menu-button flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" data-menu="add-new-menu">
+                        <span   id="menu-neww-icon"
+                                name="add_circle_outline" 
+                                class="material-icons-outlined text-purple text-2xl pointer-events-none">
+                            add_circle_outline
+                        </span>
+                    </button>
+                </span>
+
+                <div    id="tooltip-new"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm opacity-0 whitespace-normal">
+                    New
+                    <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                            data-popper-arrow>
+                    </div>
+                </div>
+
+                <span   class="relative auto"
+                        data-tooltip-target="tooltip-settings"
+                        data-tooltip-placement="right">
+                    <button type="button" class="settings-item menu-button flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" data-menu="settings-menu">
+                        <span   id="menu-settings-icon" 
+                                name="settings"
+                                class="material-icons-outlined text-purple text-2xl pointer-events-none">
+                            settings
+                        </span>
+                    </button>
+                </span>
+
+                <div    id="tooltip-settings"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm opacity-0 whitespace-normal">
+                    Ajustes
+                    <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                            data-popper-arrow>
+                    </div>
+                </div>
+
+                <span   class="relative auto"
+                        data-tooltip-target="tooltip-support"
+                        data-tooltip-placement="right">
+                    <a class="flex items-center justify-center w-8 h-8 mb-2.5 cursor-pointer js-menu-toggles" href="https://akaunting.com/support" target="_blank">
+                        <span   id="menu-support-icon"
+                                class="material-icons-outlined text-purple text-2xl pointer-events-none">
+                            support
+                        </span>
+                    </a>
+                </span>
+
+                <div    id="tooltip-support"
+                        role="tooltip"
+                        class="inline-block absolute invisible z-20 py-1 px-2 text-sm font-medium rounded-lg bg-white text-gray-900 w-auto border border-gray-200 shadow-sm opacity-0 whitespace-normal">
+                    Ayuda
+                    <div    class="absolute w-2 h-2 before:absolute before:w-2 before:h-2 before:bg-white before:border-gray-200 before:transform before:rotate-45 before:border -left-1 before:border-t-0 before:border-r-0 border-gray-200"
+                            data-popper-arrow>
+                    </div>
+                </div>
+            </div>
+<!--FIN BOTONES LATERALES NOTIFICATIONS, SEARCH, NEW, SETTINGS, SUPPORT-->           
+
+
+<!--INFO EN LA PESTAÑA--> 
+<div class="main-content xl:ltr:ml-64  xl:rtl:mr-64 transition-all ease-in-out" id="panel">
+    <div id="main-body">
+        <div class="container">
+            <div id="header" class="xl:pt-6 -mt-2">
+                <div class="flex flex-col sm:flex-row items-start justify-between sm:space-x-4 hide-empty-page">
+                    <div data-page-title-first class="w-full sm:w-6/12 items-center mb-3 sm:mb-0">
+                        <div class="flex items-center space-y-4">
+                            <h1 class="flex items-center text-2xl xl:text-5xl text-black font-light -ml-0.5 mt-2 whitespace-nowrap">
+                                <div>
+                                    <div data-title-truncate>Editar Perfil</div>
+                                </div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div data-page-title-second class="w-full flex flex-wrap flex-col sm:flex-row sm:items-center justify-end sm:space-x-2 sm:rtl:space-x-reverse suggestion-buttons">
+                    </div>
+                </div>
+            </div>
+
+<!--PANTALLA DE INFORMACION PERSONAL-->           
+            <div id="app">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="relative lg:w-8/12 z-10">
+                        <div class="relative mt-4">
+                            <form   method="POST"
+                                    action="https://app.akaunting.com/251408/auth/profile/252911"
+                                    class="mb-0"
+                                    role="form"
+                                    novalidate="true"
+                                    enctype="multipart/form-data"
+                                    accept-charset="UTF-8"
+                                    @submit.prevent="onSubmit"
+                                    @keydown="form.errors ? form.errors.clear($event.target.name): null"
+                                    id="user">
+                                        <input type="hidden" name="_token" value="WkDLphFvRNBwzqxm4pwoX0mVbxWw3rGjzqS46XIY">    <input type="hidden" name="_method" value="PATCH">    <div class="mb-14">
+                                            <div class="border-b-2 border-gray-200  pb-4">
+                                                <h2 class="lg:text-lg font-medium text-black">
+                                            Información Personal
+                                                </h2>
+                                                <span class="text-sm font-light text-black block gap-x-1 mt-1">
+                                            Por favor, mantenga sus datos actualizados para que el proveedor pueda responder sus consultas y atender sus órdenes de compra.
+                                                </span>
+                                            </div>
+
+<!--CASILLEROS DE DATOS PERSONALES-->
+
+                                            <div class="grid my-3.5 gap-y-6 gap-x-8 sm:grid-cols-6">
+                                                <div class="sm:col-span-3 grid gap-x-8 gap-y-6 grid-rows-3">
+                                                    <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                        <label class="text-black text-sm font-medium" for="name" required="required">
+                                                    Nombre y apellido (o Razón Social)
+                                                            <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                        </label>        
+                                                        <div class="">
+                                                            <input  type="text"
+                                                                    name="name"
+                                                                    id="name"
+                                                                    class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                    value="Cliente Modelo"
+                                                                    placeholder="Ingrese su nombre completo"
+                                                                    required="required"
+                                                                    v-model="form.name"/>        
+                                                        </div>
+                                                        <div    class="text-red text-sm mt-1 block"
+                                                                v-if="form.errors.has(&quot;name&quot;)"
+                                                                v-html="form.errors.get(&quot;name&quot;)">
+                                                        </div>
+                                                    </div>
+                                                <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                    <label class="text-black text-sm font-medium" for="name" required="required">
+                                                C.U.I.T./C.U.I.L. (al cual se emitirán las facturas):
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="text"
+                                                                name="cuit"
+                                                                id="cuit"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                value="10-20304050-0"
+                                                                placeholder="Ingrese su C.U.I.T./C.U.I.L."
+                                                                required="required"
+                                                                v-model="form.cuit"/>        
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;name&quot;)"
+                                                            v-html="form.errors.get(&quot;name&quot;)">
+                                                    </div>
+                                                </div>
+                                                <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                    <label class="text-black text-sm font-medium" for="name" required="required">
+                                                Teléfono:
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="text"
+                                                                name="phoneNumber"
+                                                                id="phoneNumber"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                value="+54-223-0000-000"
+                                                                placeholder="Ingrese su número de teléfono."
+                                                                required="required"
+                                                                v-model="form.phoneNumber"/>        
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;name&quot;)"
+                                                            v-html="form.errors.get(&quot;name&quot;)">
+                                                    </div>
+                                                </div>
+                                                <div class="relative sm:col-span-3 required" :class="[{'has-error': form.errors.get(&quot;email&quot;)}]">
+                                                    <label class="text-black text-sm font-medium" for="email" required="required">
+                                                Correo electrónico
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="email"
+                                                                name="email"
+                                                                id="email"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                value="clientemodelo@protonmail.com"
+                                                                placeholder="Ingrese su correo electrónico"
+                                                                required="required"
+                                                                v-model="form.email" :disabled="true"/>
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;email&quot;)"
+                                                            v-html="form.errors.get(&quot;email&quot;)">
+                                                    </div>
+                                                </div>
+
+<!--OPCION CAMBIO DE CONTRASENIA-->
+
+                                                <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;change_password&quot;)}]">
+                                                    <div class="flex items-center justify-start lg:justify-center grid sm:grid-cols-6 ">
+                                                        <div class="sm:col-span-3">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input  type="checkbox"
+                                                                        name="change_password"
+                                                                        class="rounded-sm text-purple border-gray-300 cursor-pointer disabled:bg-gray-200 focus:outline-none focus:ring-transparent"
+                                                                        id="checkbox-change_password-1"
+                                                                        value="1"
+                                                                        required="required"
+                                                                        data-type="single"
+                                                                        v-model="form.change_password"
+                                                                        @input="onChangePassword($event)"/>
+                                                                <label class="ml-2" for="checkbox-change_password-1">
+                                                            ¿Desea cambiar su constraseña?
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;change_password&quot;)"
+                                                            v-html="form.errors.get(&quot;change_password&quot;)">
+                                                    </div>
+                                                </div>
+                                                <div    class="relative sm:col-span-3 required"
+                                                        v-if="show_password"
+                                                        :class="[{'has-error': form.errors.get(&quot;password&quot;)}]">
+                                                    <label class="text-black text-sm font-medium" for="password" required="required">
+                                                Nueva contraseña
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">    
+                                                        <input  type="password"
+                                                                name="password"
+                                                                id="password"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                value="$2y$10$8.cEBUFAAzyYRrjUthPScOPZSLBkssQhhy3o9DAVd8EYfdUULsjrC"
+                                                                placeholder="Ingrese Nueva contraseña"
+                                                                required="required"
+                                                                v-model="form.password"
+                                                                v-show="show_password"/>
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;password&quot;)"
+                                                            v-html="form.errors.get(&quot;password&quot;)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+<!--COLUMNA RELATIVA AL CAMBIO DE CONTRASEÑA-->
+
+                                            <div class="sm:col-span-3 grid gap-x-8 gap-y-6 grid-rows-3">
+                                                <div    class="relative sm:col-span-3 sm:row-span-2"
+                                                        :class="[{'has-error': form.errors.get(&quot;picture&quot;)}]">
+                                                            <label class="text-black text-sm font-medium" for="picture">
+                                                        Imagen
+                                                            </label>        
+                                                            <div class="">
+                                                                <akaunting-dropzone-file-upload text-drop-file="Subir foto desde dispositivo"
+                                                                                                text-choose-file="Choose File"
+                                                                                                class="form-file dropzone-column sm:w-1/2 h-32.5"
+                                                                                                :options={&quot;maxFilesize&quot;:&quot;16&quot;}
+                                                                                                v-model="form.picture">
+                                                                </akaunting-dropzone-file-upload>
+                                                            </div>
+                                                            <div    class="text-red text-sm mt-1 block"
+                                                                    v-if="form.errors.has(&quot;picture&quot;)"
+                                                                    v-html="form.errors.get(&quot;picture&quot;)">
+                                                            </div>
+                                                </div>
+                                                <div    class="relative sm:col-span-3 required"
+                                                        v-if="show_password"
+                                                        :class="[{'has-error': form.errors.get(&quot;current_password&quot;)}]">
+                                                    <label class="text-black text-sm font-medium" for="current_password" required="required">
+                                                Contraseña
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="password"
+                                                                name="current_password"
+                                                                id="current_password"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                placeholder="Ingrese Contraseña"
+                                                                required="required"
+                                                                v-model="form.current_password"
+                                                                v-show="show_password"/>
+                                                    </div>
+                                                    <div    class="text-red text-sm mt-1 block"
+                                                            v-if="form.errors.has(&quot;current_password&quot;)"
+                                                            v-html="form.errors.get(&quot;current_password&quot;)">
+                                                    </div>
+                                                </div>
+                                                <div    class="relative sm:col-span-3 required"
+                                                        v-if="show_password"      
+                                                        :class="[{'has-error': form.errors.get(&quot;password_confirmation&quot;)}]">
+                                                            <label class="text-black text-sm font-medium" for="password_confirmation" required="required">
+                                                        Confirmar contraseña
+                                                                <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                            </label>      
+                                                            <div class="">
+                                                                <input  type="password"
+                                                                        name="password_confirmation"
+                                                                        id="password_confirmation"
+                                                                        class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                        placeholder="Ingrese Confirmar contraseña"
+                                                                        required="required"
+                                                                        v-model="form.password_confirmation"
+                                                                        v-show="show_password"/>
+                                                            </div>
+                                                            <div    class="text-red text-sm mt-1 block"
+                                                                    v-if="form.errors.has(&quot;password_confirmation&quot;)"
+                                                                    v-html="form.errors.get(&quot;password_confirmation&quot;)">
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+
+<!--Preferencias adicionales
+<div class="mb-14">
+<div class="border-b-2 border-gray-200  pb-4">
+    <h2 class="lg:text-lg font-medium text-black">
+Preferencias de cuenta
+    </h2>
+    <span class="text-sm font-light text-black block gap-x-1 mt-1">
+Seleccione su idioma.
+    </span>
+</div>
+</akaunting-select>
+                <akaunting-select
+        class="relative sm:col-span-3 required"
+        id="form-select-locale"
+        :form-classes="[{'has-error': form.errors.get('locale') }]"
+title="Idioma"
+placeholder="- Seleccione Idioma -"
+name="locale"
+:options="[{&quot;id&quot;:&quot;ar-SA&quot;,&quot;name&quot;:&quot;\u0627\u0644\u0639\u0631\u0628\u064a\u0629&quot;},{&quot;id&quot;:&quot;az-AZ&quot;,&quot;name&quot;:&quot;Az\u0259rbaycan&quot;},{&quot;id&quot;:&quot;bg-BG&quot;,&quot;name&quot;:&quot;\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438&quot;},{&quot;id&quot;:&quot;bn-BD&quot;,&quot;name&quot;:&quot;\u09ac\u09be\u0982\u09b2\u09be&quot;},{&quot;id&quot;:&quot;bs-BA&quot;,&quot;name&quot;:&quot;Bosanski&quot;},{&quot;id&quot;:&quot;ca-ES&quot;,&quot;name&quot;:&quot;Catal\u00e0&quot;},{&quot;id&quot;:&quot;cs-CZ&quot;,&quot;name&quot;:&quot;\u010ce\u0161tina&quot;},{&quot;id&quot;:&quot;da-DK&quot;,&quot;name&quot;:&quot;Dansk&quot;},{&quot;id&quot;:&quot;de-DE&quot;,&quot;name&quot;:&quot;Deutsch&quot;},{&quot;id&quot;:&quot;el-GR&quot;,&quot;name&quot;:&quot;\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac&quot;},{&quot;id&quot;:&quot;en-AU&quot;,&quot;name&quot;:&quot;English (AU)&quot;},{&quot;id&quot;:&quot;en-GB&quot;,&quot;name&quot;:&quot;English (GB)&quot;},{&quot;id&quot;:&quot;en-US&quot;,&quot;name&quot;:&quot;English (US)&quot;},{&quot;id&quot;:&quot;es-AR&quot;,&quot;name&quot;:&quot;Espa\u00f1ol de Argentina&quot;},{&quot;id&quot;:&quot;es-ES&quot;,&quot;name&quot;:&quot;Espa\u00f1ol&quot;},{&quot;id&quot;:&quot;es-MX&quot;,&quot;name&quot;:&quot;Espa\u00f1ol de M\u00e9xico&quot;},{&quot;id&quot;:&quot;et-EE&quot;,&quot;name&quot;:&quot;Eesti&quot;},{&quot;id&quot;:&quot;fa-IR&quot;,&quot;name&quot;:&quot;\u0641\u0627\u0631\u0633\u06cc&quot;},{&quot;id&quot;:&quot;fr-FR&quot;,&quot;name&quot;:&quot;Fran\u00e7ais&quot;},{&quot;id&quot;:&quot;he-IL&quot;,&quot;name&quot;:&quot;\u05e2\u05b4\u05d1\u05b0\u05e8\u05b4\u05d9\u05ea&quot;},{&quot;id&quot;:&quot;hi-IN&quot;,&quot;name&quot;:&quot;\u0939\u093f\u0928\u094d\u0926\u0940&quot;},{&quot;id&quot;:&quot;hr-HR&quot;,&quot;name&quot;:&quot;Hrvatski&quot;},{&quot;id&quot;:&quot;hu-HU&quot;,&quot;name&quot;:&quot;Magyar&quot;},{&quot;id&quot;:&quot;id-ID&quot;,&quot;name&quot;:&quot;Bahasa Indonesia&quot;},{&quot;id&quot;:&quot;is-IS&quot;,&quot;name&quot;:&quot;\u00cdslenska&quot;},{&quot;id&quot;:&quot;it-IT&quot;,&quot;name&quot;:&quot;Italiano&quot;},{&quot;id&quot;:&quot;ja-JP&quot;,&quot;name&quot;:&quot;\u65e5\u672c\u8a9e&quot;},{&quot;id&quot;:&quot;ka-GE&quot;,&quot;name&quot;:&quot;\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8&quot;},{&quot;id&quot;:&quot;ko-KR&quot;,&quot;name&quot;:&quot;\ud55c\uad6d\uc5b4&quot;},{&quot;id&quot;:&quot;lt-LT&quot;,&quot;name&quot;:&quot;Lietuvi\u0173&quot;},{&quot;id&quot;:&quot;lv-LV&quot;,&quot;name&quot;:&quot;Latvie\u0161u valoda&quot;},{&quot;id&quot;:&quot;mk-MK&quot;,&quot;name&quot;:&quot;\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438 \u0458\u0430\u0437\u0438\u043a&quot;},{&quot;id&quot;:&quot;ms-MY&quot;,&quot;name&quot;:&quot;Bahasa Melayu&quot;},{&quot;id&quot;:&quot;nb-NO&quot;,&quot;name&quot;:&quot;Norsk Bokm\u00e5l&quot;},{&quot;id&quot;:&quot;ne-NP&quot;,&quot;name&quot;:&quot;\u0928\u0947\u092a\u093e\u0932\u0940&quot;},{&quot;id&quot;:&quot;nl-NL&quot;,&quot;name&quot;:&quot;Nederlands&quot;},{&quot;id&quot;:&quot;pl-PL&quot;,&quot;name&quot;:&quot;Polski&quot;},{&quot;id&quot;:&quot;pt-BR&quot;,&quot;name&quot;:&quot;Portugu\u00eas do Brasil&quot;},{&quot;id&quot;:&quot;pt-PT&quot;,&quot;name&quot;:&quot;Portugu\u00eas&quot;},{&quot;id&quot;:&quot;ro-RO&quot;,&quot;name&quot;:&quot;Rom\u00e2n\u0103&quot;},{&quot;id&quot;:&quot;ru-RU&quot;,&quot;name&quot;:&quot;\u0420\u0443\u0441\u0441\u043a\u0438\u0439&quot;},{&quot;id&quot;:&quot;sk-SK&quot;,&quot;name&quot;:&quot;Sloven\u010dina&quot;},{&quot;id&quot;:&quot;sl-SI&quot;,&quot;name&quot;:&quot;Sloven\u0161\u010dina&quot;},{&quot;id&quot;:&quot;sr-RS&quot;,&quot;name&quot;:&quot;\u0421\u0440\u043f\u0441\u043a\u0438 \u0458\u0435\u0437\u0438\u043a&quot;},{&quot;id&quot;:&quot;sq-AL&quot;,&quot;name&quot;:&quot;Shqip&quot;},{&quot;id&quot;:&quot;sv-SE&quot;,&quot;name&quot;:&quot;Svenska&quot;},{&quot;id&quot;:&quot;th-TH&quot;,&quot;name&quot;:&quot;\u0e44\u0e17\u0e22&quot;},{&quot;id&quot;:&quot;tr-TR&quot;,&quot;name&quot;:&quot;T\u00fcrk\u00e7e&quot;},{&quot;id&quot;:&quot;uk-UA&quot;,&quot;name&quot;:&quot;\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430&quot;},{&quot;id&quot;:&quot;ur-PK&quot;,&quot;name&quot;:&quot;\u0627\u0631\u062f\u0648&quot;},{&quot;id&quot;:&quot;uz-UZ&quot;,&quot;name&quot;:&quot;O&#039;zbek&quot;},{&quot;id&quot;:&quot;vi-VN&quot;,&quot;name&quot;:&quot;Ti\u1ebfng Vi\u1ec7t&quot;},{&quot;id&quot;:&quot;zh-CN&quot;,&quot;name&quot;:&quot;\u7b80\u4f53\u4e2d\u6587&quot;},{&quot;id&quot;:&quot;zh-TW&quot;,&quot;name&quot;:&quot;\u7e41\u9ad4\u4e2d\u6587&quot;}]"
+      :full-options="[]"
+        search-text="Escriba para buscar.."
+               value="es-AR"
+        @interface="form.errors.clear('locale'); form.locale = $event;"
+        clearable
+        :form-error="form.errors.get('locale')"
+loading-text="Cargando..."
+no-data-text="Sin datos"
+no-matching-data-text="No hay datos coincidentes">
+</akaunting-select>
+</div>
+</div>
+
+        <akaunting-switch
+                name="enabled"
+                value="1"
+                label="Activo"
+                @interface="form.errors.clear('enabled');
+                form.enabled = $event">
+        </akaunting-switch>
+-->
+
+<!--BOTONES GUARDAR Y CANCELAR CAMBIOS-->
+                <div class="mb-14">
+                    <div class="flex items-center justify-end sm:col-span-6">
+                        <a class="px-6 py-1.5 hover:bg-gray-200 rounded-lg ltr:mr-2 rtl:ml-2" href="https://app.akaunting.com/251408/auth/users">
+                    Cancelar
+                        </a>
+                        <button type="submit" class="relative flex items-center justify-center bg-green hover:bg-green-700 text-white px-6 py-1.5 text-base rounded-lg disabled:bg-green-100" :disabled="form.loading">
+                            <i  class="animate-submit delay-[0.28s] absolute w-2 h-2 rounded-full left-0 right-0 -top-3.5 m-auto before:absolute before:w-2 before:h-2 before:rounded-full before:animate-submit before:delay-[0.14s] after:absolute after:w-2 after:h-2 after:rounded-full after:animate-submit before:-left-3.5 after:-right-3.5 after:delay-[0.42s]"
+                                v-if="form.loading">
+                            </i>
+                            <span :class="[{'opacity-0': form.loading}]">
+                        Guardar
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    
+                </div>
+
+<!--MENSAJE FINAL-->
+
+        <notifications>Si desea comunicarse con su proveedor por sugerencias o información, podrá hacerlo a través del formulario de consultas.</notifications>
+
+        <form id="form-dynamic-component" method="POST" action="#"></form>
+
+        <component v-bind:is="component"></component>
+
+        </div> 
+<!--CIERRE PANTALLA DE INFO PERSONAL id App-->
+
+    <script src="">
+    </script>
+
+<!--FOOTER-->
+<footer class="footer container">
+    <div class="flex flex-col sm:flex-row items-center justify-between lg:mt-20 py-7 text-sm font-light">
+        <div>
+    Sitio desarrollado para la Diplomatura en Iniciación al Desarrollo Web con JavaScript de la Universidad Tecnológica Nacional
+        <a class="" href="" target="_blank"></a>
+        &nbsp;<span class="material-icons align-middle text-black-300">-</span>&nbsp;
+    Versión 1.0.0
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

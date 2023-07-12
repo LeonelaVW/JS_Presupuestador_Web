@@ -1,0 +1,165 @@
+<!-- PANTALLA PRINCIPAL -->
+
+<!DOCTYPE html>
+<html dir="ltr" lang="es-AR">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8; charset=ISO-8859-1"/>
+
+    <title>Editar perfil</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/Icons/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="/user_interface/Page1_LogIn/login_style_3.css" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/FullPage_PresupuestadorWEB/img/icons/purchase-home-purchase-a-house-house-shopping-house-hunting-svgrepo-com blanco chico.png" type="image/png">
+ 
+</head>
+
+<body class="bg-body overflow-y-overlay"> 
+
+
+<!--INFO EN LA PESTAÑA--> 
+<div class="main-content xl:ltr:ml-64  xl:rtl:mr-64 transition-all ease-in-out" id="panel">
+    <div id="main-body">
+        <div class="container">
+
+            <img class="main-trademark-user-settings" src="/img/text/text-1687934954039-mediano.png" alt="">
+            
+
+<!--PANTALLA DE INFORMACION PERSONAL-->           
+            <div id="app">
+                <div class="flex flex-col lg:flex-row">
+                            <form id="user">
+
+<!--CASILLEROS DE DATOS PERSONALES-->
+
+                                            <div class="grid my-3.5 gap-y-6 gap-x-8 sm:grid-cols-6">
+                                                <div class="sm:col-span-3 grid gap-x-8 gap-y-6 grid-rows-3">
+                                            <form id="formulario-de-registro">
+                                                    <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                        <label class="text-black text-sm font-medium" for="name" required="required">
+                                                    Nombre y apellido (o Razón Social)
+                                                            <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                        </label>        
+                                                        <div class="">
+                                                            <input  type="text"
+                                                                    name="name"
+                                                                    id="name"
+                                                                    class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                    placeholder="Ingrese su nombre completo"
+                                                                    required="required"
+                                                                    v-model="form.name"/>        
+                                                        </div>
+                                                    </div>
+
+
+                                                <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                    <label class="text-black text-sm font-medium" for="name" required="required">
+                                                C.U.I.T./ D.N.I.:
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="text"
+                                                                name="cuit"
+                                                                id="cuit"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                placeholder="Ingrese su C.U.I.T./C.U.I.L."
+                                                                required="required"/>        
+                                                    </div>
+                                                </div>
+                                                <div class="relative sm:col-span-3 required":class="[{'has-error': form.errors.get(&quot;name&quot;)}]"            >
+                                                    <label class="text-black text-sm font-medium" for="name" required="required">
+                                                Teléfono:
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="text"
+                                                                name="phoneNumber"
+                                                                id="phoneNumber"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                placeholder="Ingrese su número de teléfono."
+                                                                required="required"/>        
+                                                    </div>
+                                                </div>
+                                                <div class="relative sm:col-span-3 required" :class="[{'has-error': form.errors.get(&quot;email&quot;)}]">
+                                                    <label class="text-black text-sm font-medium" for="email" required="required">
+                                                Correo electrónico
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="email"
+                                                                name="email"
+                                                                id="email"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                placeholder="Ingrese su correo electrónico"
+                                                                required="required"/>
+                                                    </div>
+                                                </div>
+                                                <div class="relative sm:col-span-3 required" :class="[{'has-error': form.errors.get(&quot;email&quot;)}]">
+                                                    <label class="text-black text-sm font-medium" for="email" required="required">
+                                                Contraseña
+                                                        <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
+                                                    </label>        
+                                                    <div class="">
+                                                        <input  type="password"
+                                                                name="password"
+                                                                id="password"
+                                                                class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
+                                                                placeholder="Ingrese una contraseña"
+                                                                required="required"/>
+                                                    </div>
+                                                </div>
+
+<!--BOTONES GUARDAR Y CANCELAR CAMBIOS-->
+                <div class="mb-14">
+                    <div class="flex items-center justify-end sm:col-span-6">
+
+                        <a class="cancel-button px-6 py-1.5 hover:bg-gray-200 rounded-lg ltr:mr-2 rtl:ml-2" href="http://127.0.0.1:5501/user_interface/Page1_LogIn/login.html">
+                    Cancelar
+                        </a>
+
+
+                        <button type="submit" 
+                                class="relative flex items-center justify-center bg-green hover:bg-green-700 text-white px-6 py-1.5 text-base rounded-lg disabled:bg-green-100" >
+                            <span :class="">
+                        Guardar
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<!--FOOTER-->
+<footer class="footer-container">
+    <div class="flex flex-col sm:flex-row items-center justify-between lg:mt-20 py-7 text-sm font-light">
+        <div>
+    Sitio desarrollado para la Diplomatura en Iniciación al Desarrollo Web con JavaScript de la Universidad Tecnológica Nacional
+        <a class="" href="" target="_blank"></a>
+        &nbsp;<span class="material-icons align-middle text-black-300">-</span>&nbsp;
+    Versión 1.0.0
+        </div>
+    </div>
+</footer>
+        
+<!--CIERRE PANTALLA DE INFO PERSONAL id App-->
+
+<script src="user_settings_db.js"></script>
+
+
+
+</body>
+</html>

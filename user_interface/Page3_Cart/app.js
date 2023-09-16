@@ -14,7 +14,7 @@ seeMoreBtn.addEventListener('click', () => {
 
 
 // RENDER PRODUCTS
-function renderProdcuts() {
+function renderProducts() {
   products.forEach((product) => {
     productsEl.innerHTML += `
             <div class="item">
@@ -40,7 +40,7 @@ function renderProdcuts() {
         `;
   });
 }
-renderProdcuts();
+renderProducts();
 
 // cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -68,8 +68,8 @@ function updateCart() {
   renderCartItems();
   renderSubtotal();
 
-  // save cart to local storage
-  localStorage.setItem("CART", JSON.stringify(cart));
+// save cart to local storage
+localStorage.setItem("CART", JSON.stringify(cart));
 }
 
 // calculate and render subtotal

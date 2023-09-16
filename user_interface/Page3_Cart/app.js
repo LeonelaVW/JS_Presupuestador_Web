@@ -30,10 +30,10 @@ function renderProducts() {
                         </p>
                     </div>
                     <div class="add-to-wishlist">
-                        <img src="/img/Icons/grey-icons/star-square-svgrepo-com 74px 256x256.png" alt="add to wish list">
+                        <img src="../../img/Icons/grey-icons/star-square-svgrepo-com 74px 256x256.png" alt="add to wish list">
                     </div>
                     <div class="add-to-cart" onclick="addToCart(${product.id})">
-                        <img src="/img/Icons/grey-icons/shopping-cart-svgrepo-com 74px 256x256.png" alt="add to cart">
+                        <img src="../../img/Icons/grey-icons/shopping-cart-svgrepo-com 74px 256x256.png" alt="add to cart">
                     </div>
                 </div>
             </div>

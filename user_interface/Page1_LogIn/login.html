@@ -10,16 +10,16 @@
     <title>CuantoDuele.com</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/img/Icons/favicon.png" type="image/png">
+    <link rel="icon" href="../../img/Icons/favicon.png">
 
     <!-- Css -->
-    <link rel="stylesheet" href="/user_interface/Page1_LogIn/login_style_3.css" type="text/css">
+    <link rel="stylesheet" href="login_style_3.css">
 
 </head>
 
 <body class="bg-body overflow-y-overlay">
     
-    <div id="app" class="h-screen lg:h-auto bg-no-repeat bg-cover bg-center" style="background-image: url(/img/login-bg.png);">
+    <div id="app" class="h-screen lg:h-auto bg-no-repeat bg-cover bg-center" style="background-image: url(../../img/login-bg.png);">
     <div class="relative w-full lg:max-w-7xl flex items-center m-auto">
         <div class="hidden lg:block md:w-6/12 h-full flex-col h-fit">
     <div class="swiper bg-cover bg-bottom bg-no-repeat h-screen py-24">
@@ -27,7 +27,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-center flex-col items-center">
                     <div class="main-image-login">
-                        <img src="/img/Logos/Constructor-PNG-Background.png" />
+                        <img src="../../img/Logos/Constructor-PNG-Background.png" />
                     </div>
 
                 </div>
@@ -38,7 +38,7 @@
         <div class="main-title w-full lg:w-46 h-31 flex flex-col justify-center gap-12 px-6 lg:px-24 py-24 mt-12 lg:mt-0">
             <div class="flex flex-col gap-4">
             <div> 
-            <img class="main-trademark" src="/img/text/text-1687934917451-grande.png" alt="">
+            <img class="main-trademark" src="../../img/text/text-1687934917451-grande.png" alt="">
             
             <h1 class="text-lg my-3">
 Inicia sesión o crea una nueva cuenta:
@@ -54,7 +54,8 @@ Email
             <span class="text-red ltr:ml-1 rtl:mr-1">*</span>
         </label>        
         <div class="input-group-alternative">
-            <input type="email"
+            <input 
+            type="email"
             name="email"
             id="email"
             class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
@@ -70,7 +71,8 @@ Contraseña
         </label>        
         <div class="input-group-alternative">
             
-        <input type="password"
+        <input 
+        type="password"
         name="password"
         id="password"
         class="w-full text-sm px-3 py-2.5 mt-1 rounded-lg border border-light-gray text-black placeholder-light-gray bg-white disabled:bg-gray-200 focus:outline-none focus:ring-transparent focus:border-purple"
@@ -81,12 +83,15 @@ Contraseña
     </div>
 
 <div class="sm:col-span-6 flex flex-row justify-between items-center">
-    <a class="bottom-options text-black-500 hover:text-black-700 text-sm" href="http://127.0.0.1:5501/user_interface/Page2_UserSettings/user_settings.html">
+    <a class="bottom-options text-black-500 hover:text-black-700 text-sm" href="../Page2_UserSettings/user_settings.html">
 Crea una nueva cuenta
     </a>
 </div>
 
-    <button type="submit" class="ingresar-button relative flex items-center justify-center bg-green hover:bg-green-700 text-white px-6 py-1.5 text-base rounded-lg disabled:bg-green-100 sm:col-span-6">
+    <button 
+    type="submit" 
+    class="ingresar-button relative flex items-center justify-center bg-green hover:bg-green-700 text-white px-6 py-1.5 text-base rounded-lg disabled:bg-green-100 sm:col-span-6"
+    href = "../Page3_Cart/index.html">
         <span class="[{'opacity-0': form.loading}]">
 Ingresar al presupuestador
         </span>
@@ -97,8 +102,6 @@ Ingresar al presupuestador
 </div>
 </div>
 </div>
-
-    <script src="login_db.js"></script> 
 
     
 <!--FOOTER-->
@@ -112,6 +115,7 @@ Ingresar al presupuestador
         </div>
     </div>
 </footer>
-    
+
+<script src="./login_db.js"></script> 
 </body>
 </html>

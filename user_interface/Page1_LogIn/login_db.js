@@ -28,6 +28,6 @@ formularioDeLogin.addEventListener("submit", async (evento) => {
     alert(`Sesion iniciada. Bienvenido ${usuario.full_name}!`)
     localStorage.setItem("datos-de-usuario", JSON.stringify(usuario))
 
-    window.location.href = "/user_interface/Page3_Cart/index.html"
+    window.location.href = "../user_interface/Page3_Cart/index.html"
   }
 })

@@ -36,5 +36,5 @@ async function enviarDatos(usuario, ruta) {
   
     formularioDeRegistro.reset()
 
-    window.location.href = "/user_interface/Page1_Login/login.html"
+    window.location.href = "./Page1_Login/index.html"
   })
